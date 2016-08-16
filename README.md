@@ -1,4 +1,4 @@
-Watson Project CNIT 481 2015 fall
+**Watson Project CNIT 481 2015 fall**
 
 Web app using Watson and IBM Bluemix APIs linked with obesity problems
 
