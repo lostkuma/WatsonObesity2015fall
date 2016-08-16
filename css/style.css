@@ -1,0 +1,99 @@
+body {
+  background-color: white;
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.obesitypic {
+  position: relative;
+  max-width: 320px;
+  margin-top: -4.3em;
+  margin-left: 0.5em;
+  float: right;
+}
+
+.icon {
+  width: 40px;
+  float: left;
+  margin-top: 0.5em;
+  margin-right: 0.2em;
+}
+
+.btn-q {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  background-image: none;
+  border: 2px solid transparent;
+  white-space: nowrap;
+  padding: 1em;
+  line-height: 1.428571429;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: .15s;
+  transition: .15s;
+  color: #fff;
+  background-color: #4b9900;
+  margin-bottom: 2em;
+}
+.btn-q:hover,
+.btn-q:focus,
+.btn-q:active,
+.btn-q.active,
+.open .dropdown-toggle.btn-q {
+  background-color:  #336600;
+}
+.btn-q:active,
+.btn-q.active,
+.open .dropdown-toggle.btn-q {
+  background-image: none;
+}
+.btn-secondary {
+  width: 100%;
+}
+
+.btn-secondary {
+  width:100%;
+}
+
+.speak-button {
+  color: #e0e0e0; /*gray10*/
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin: 1em 1em 1em 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+
+
+select.custom-select {
+  /* overflow: hidden; */
+  height: 3.5em;
+  border: 0;
+  background-color: white;
+  outline: 2px solid #c7c7c7;
+}
+
+.error-row {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.error-row a {
+  color: white;
+  margin-bottom: 0.2em;
+}
+
+#dropdownMenuList {
+  width: 99%;
+}
+
+.service-icon {
+  width: 100%;
+}
