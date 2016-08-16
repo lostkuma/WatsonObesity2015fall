@@ -3,3 +3,5 @@
 Web app using Watson and IBM Bluemix APIs linked with obesity problems
 
 Only the customized part of the html and css is submitted, js files not included
+
+A demo video is included
