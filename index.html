@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JSX Obesity QA Generator</title>
+    <link href="css/watson-bootstrap-style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/icon.png" />
+  </head>
+  <body>
+
+    <!-- Hearder -->
+    <div class="header">
+      <div class="container">
+        <div class="col-lg-10 col-md-10 col-xs-12">
+          <!-- <img src="images/obesity.png"> -->
+          <h1>JSX Obesity QA Generator</h1>
+          <div class="icon hidden-xs hidden-sm">
+            <img src="images/watson_icon.png" class="service-icon">
+          </div><!-- .col-lg-2 -->
+          <h2>Let Watson read the answers for you...</h2>
+        </div><!-- .col-lg-10 -->
+      </div><!-- .container -->
+    </div><!-- .header -->
+    <!-- main content-->
+    <div class="container">
+
+      <!-- App Description -->
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <h3>How to use</h3>
+        </div><!-- .col-lg-12 -->
+        <div class="col-md-12 col-sm-12"  style="margin-bottom: 1em;">
+          <p class="help-block">
+            <div class="obesitypic hidden-xs hidden-sm">
+              <img src="images/obesity.png">
+            </div>
+            1. Enter a question and click "Ask a question to Watson."<br>
+            2. You're good to go! Answer will be displayed and Watson will read it for you!<br><br>
+            If you want to play with this app more...<br>
+            Try scroll down and select an alternative answer and see what happens!<br>
+            Try replace with the text you want Watson to read in the big box and click speak!<br>
+            Try download the audio file so you can have Watson with your favorite story on the go!<br><br>
+
+            Follow the link for a short <a href="https://youtu.be/_qlC3LJQ11o">demo</a> to this app.<br><br>
+            &#9786; This app only support English language and obesity related questions for now &#9786;
+          </p>
+        </div><!-- main content -->
+      </div>
+
+      <!-- question window-->   
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="well">
+            <form class="form-horizontal">
+              <fieldset>
+                <div class="row error-rowQ">
+                  <div class="col-lg-12">
+                    <div id="errorAlertQ" >
+                      <span id="errorMessageQ"></span>
+                      <a class="pull-right" href="#" id="errorCloseQ">&times;</a>
+                    </div>
+                  </div>
+                </div>
+                <textarea id="QuestionText" rows="1" placeholder="Enter your question here..."></textarea>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- submit button -->
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <button type="button" class="submit-button btn btn-q">
+          Ask a question to Watson
+          </button>
+        </div>
+      </div>
+
+      <!-- text to speech -->
+      <!-- Tab panes -->
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="well">
+            <form class="form-horizontal">
+              <div role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Answer</a></li>
+                </ul>
+                <div class="hr-tab"></div>
+
+                <fieldset>
+                  <div class="row error-row">
+                    <div class="col-lg-12">
+                      <div id="errorAlert" >
+                        <span id="errorMessage"></span>
+                        <a class="pull-right" href="#" id="errorClose">&times;</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                          <textarea rows="12" id="textArea" placeholder="This area will display the answers. You can also enter text manually here and simply use this as a text to speech generator."></textarea>
+                        </div><!-- END tab panel -->
+                      </div><!-- END content -->
+                    </div><!-- .col-lg-12 -->
+                  </div><!-- .form -->
+                </fieldset>
+              </div><!-- /.tabpanel -->
+            </form>
+          </div><!-- /.well -->
+        </div> <!-- /.col -->
+      </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <button type=button class="download-button btn btn-block">
+            Download
+          </button>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <button type=button class="speak-button btn btn-secondary">
+            Speak&emsp;
+            <span>(Only in Chrome & Firefox)</span>
+          </button>
+        </div>
+
+      </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="audioParent">
+            <audio class="audio" controls>
+            Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div><!-- row -->
+
+      <!-- alternative answers to the question -->
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="help-block">
+            <p id="alt">Alternative Answer: </p>
+          </div>
+            <div class="radiobuttons">
+              <input type="radio" name="alt_button" id="alt_button0">
+              <label></label>
+              <br>
+              <input type="radio" name="alt_button" id="alt_button1">
+              <label></label>
+              <br>
+              <input type="radio" name="alt_button" id="alt_button2">
+              <label></label>
+            </div>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+    <!-- js files -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/demo.js"></script>
+    <script>
+    </script>
+
+  </body>
+
+</html>
